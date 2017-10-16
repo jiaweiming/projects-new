@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/carousel.css">
+
+    <title>个人主页</title>
+</head>
+<body>
+<div class="top">
+    <div>
+        <p id="jia">欢迎来到贾玮民的个人网站</p>
+    </div>
+</div>
+<div class="picLists">
+    <div class="hide protable" >
+        <table border="1"  cellpadding="10">
+            <caption style="color: #ff4610">个人作品</caption>
+            <tr><td><a href="./juhuasuan/juhuasuan.htm" target="__blank">1.仿聚划算首页</a></td></tr>
+            <tr><td><a href="./musicplayer/index.html" target="__blank">2.音乐播放器</a></td></tr>
+            <tr><td><a href="#" target="__blank">3.坦克大战</a></td></tr>
+            <tr><td><a href="#" target="__blank">4.动画</a></td></tr>
+            <tr><td><a href="./canvas.clock/index.html" target="__blank">5.时钟</a></td></tr>
+            <tr><td><a href="#" target="__blank">6.其他</a></td></tr>
+        </table>
+    </div>
+    <div class="hide introduce">
+        <p>姓名：贾玮民<br>
+            学历：本科<br>
+            兴趣爱好：编程、看书、玩游戏等<br>
+            简介：<br>
+            编程的强大与神奇使我对技术产生了浓厚的兴趣，
+            从而学习了html,css,js,jQuery以及Bootstrap、Less、Vue等。
+            目前正在努力摆脱小菜鸟的称呼,投身于前端开发中...
+        </p>
+    </div>
+    <!--引用bootstrap的轮播图-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/list-2.jpg" alt="..." width="100%" height="350px">
+            </div>
+            <div class="item">
+                <img src="images/list-1.jpg" alt="..."  width="100%" height="350px">
+            </div>
+            <div class="item">
+                <img src="images/list-3.jpg" alt="..." width="100%" height="350px">
+            </div>
+        </div>
+    </div>
+    <!--引用bootstrap的轮播插件-->
+</div>
+<div class="footer">
+    <div>
+        <div class="box project" title="click me!" ><img src="images/h5.jpg" alt="0"></div>
+    </div>
+    <div>
+        <div class="box csdn" title="click me!"><img src="images/csdn.jpg" alt="1"></div>
+    </div>
+    <div>
+        <div class="box github" title="click me!"><img src="images/Github.jpg" alt="2"></div>
+    </div>
+    <div>
+        <div class="box about" title="click me!"><img src="images/me.jpg" alt="3"></div>
+    </div>
+</div>
+<div class="downBottom">
+    <div class="dB1"><button>Projects</button></div>
+    <div><button><a href="http://blog.csdn.net/jiaweimin123" target="__blank">CSDN</a></button></div>
+    <div><button><a href="https://github.com/jiaweiming" target="__blank">GitHub</a></button></div>
+    <div class="dB2"><button>About</button></div>
+</div>
+<div class="mail">
+    <p><span id="date"></span>&nbsp;All Rights Reserved&nbsp; E-mail:915942840@qq.com</p>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

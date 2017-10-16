@@ -1,0 +1,240 @@
+html，body{
+    font-size: 20px;
+	height:100%;
+}
+*{
+    margin: 0;
+    padding:0;
+}
+/*顶部*/
+.top{
+    float:left;
+    width: 100%;
+    height: 60px;
+    line-height:60px;
+    background-color: #333333;
+    box-shadow: 2px 2px 2px #f1f1f1;
+}
+.top > div{
+    display:inline-block;
+}
+.top > div:nth-of-type(1){
+    color:#f1f1f1;
+    float: left;
+    width:calc(50% - 5px);
+    margin-left:5px;
+}
+.top > div:nth-of-type(2){
+    width:50%;
+    height: 100%;
+    float: right;
+}
+/*中间轮播海报*/
+.picLists{
+     float:left;
+    margin-top:1px;
+    width: 100%;
+    height: 350px;
+    z-index: 2  ;
+}
+/*底部大通栏*/
+.footer{
+    display:block;;
+    float:left;
+    width: 100%;
+    height: 6rem;
+    background-color: #3f3132;
+    /*background: linear-gradient(to right, #272822,#4298B3 , #A7B9C3,#272822);*/
+}
+.footer > div{
+    display:block;
+    float:left;
+    width:25%;
+    height:100%;
+    text-align:center;
+}
+/*下面4个正方形 填充了4个图片*/
+.box{
+    margin:1rem auto;
+    width: 4rem;
+    height: 4rem;
+    background-color: RGBA(23,26,18,0.8);
+    transform: rotate(45deg);
+    border-radius: 0.5rem;
+    box-shadow:inset 1px 1px 1px #f1f1f1;
+}
+.box:active{
+    transform:scale(1.2,1.2);
+}
+/*原本4个正方
+形下的图片*/
+.box>img{
+    width: 4rem;
+    height:  4rem;
+    border-radius: 100%;
+    transform: rotate(-45deg);
+}
+.box:hover{
+    cursor: pointer;
+    background-color: rgba(63,31,31, 0.8);
+}
+/*左右两边影藏的两个div*/
+.hide{
+    width: 12%;
+    height: 19.2rem;
+    z-index: 5;
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+}
+/*左边隐藏的div下的列表*/
+table tr td:hover{
+    background-color: #3A2A45;
+}
+table tr td a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color:#f1f1f1;
+}
+table tr td:hover>a{
+    color:#fff;
+}
+.protable{
+    background-color:#272822;
+    width:10%;
+    height:300px;
+    border-radius:10px;
+}
+.protable > table{
+    margin:2px auto;
+}
+/*左边隐藏的作品列表*/
+.protable ol li a:hover{
+    background-color: #0d88c1;
+}
+.protable ol li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+/*右边隐藏的div*/
+.introduce{
+    background-color:#272822;
+    margin-left: 85%;
+    width:15%;
+    height:350px;
+    border-radius:10px;
+
+}
+
+/*右边隐藏的div，自我简介文字*/
+.introduce p{
+    margin:5px 5px;
+    font-size: 0.85rem;
+    color:#f1f1f1;
+}
+/*最下面4个像按钮一样的外出div*/
+.downBottom{
+    float:left;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #484848;
+}
+/*包含4个按钮的各自div*/
+.downBottom div{
+    display:inline-block;
+    float:left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    line-height:100%;
+}
+/*下面4个按钮*/
+.downBottom div > button{
+    width: 5rem;
+    margin:0.25rem auto;
+    height:1.5rem;
+    font-size: 0.8rem;
+    color: #f1f1f1;
+    background-color: #3b3645;
+    border-radius: 0.5rem;
+    border-top:none;
+    border-left:none;
+    border:none;
+    outline: none;
+    box-shadow:1px 1px 1px 1px #f1f1f1;
+}
+/*按钮鼠标经过时，缩放*/
+.downBottom button:hover{
+    transform: scale(1.15,1.15);
+    background-color: #272822;
+    cursor: pointer;
+}
+.downBottom button:active{
+    transform: scale(1.3,1.3);
+}
+/*按钮上的文字*/
+.downBottom button>a{
+    color: #f1f1f1;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+/*最后一行的版权联系*/
+.mail{
+    float:left;
+    width: 100%;
+    height:calc(100% - 60px - 350px - 60px - 2px);
+    border-top:1px solid #807480;
+    background-color: #f1f1f1;
+}
+.mail p{
+    text-align: center;
+    line-height: 2rem;
+    color:#333333;
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width:479px){
+    html{
+        font-size: 10px; !important;
+    }
+    #jia{
+    	font-size: 14px;!important;
+    }
+    .protable{
+    	width: 100px;!important;
+    	height: 200px;!important;
+    }
+    .introduce{
+    	width: 100px;!important;
+    	height: 320px;!important;
+    	margin-left:75%;!important;
+    }
+      .box{
+        width: 4.0rem;!important;
+        height:  4.0rem;!important;
+    }
+    /*原本4个正方形下的图片*/
+    .box>img{
+        width: 4.0rem;!important;
+        height: 4.0rem;!important;
+    }
+}
+/*媒体查询，根据宽度改变根元素的大小*/
+
+@media screen and (min-width:768px){
+    html{
+        font-size: 13px;!important;
+    }
+}
+@media screen and (min-width: 1024px){
+    html{
+        font-size: 21px;!important;
+    }
+}
+@media screen and (min-width: 1440px){
+    html{
+        font-size: 30.5px;!important;
+    }
+}
+
+

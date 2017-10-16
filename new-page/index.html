@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0,
+          maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <img src="img/list-0000.jpg" alt="背景图片" width="100%" height="100%">
+    </div>
+    <div id="mine">
+        <div class="mid"><p>欢迎来到贾玮民的主页</p></div>
+        <div class="cont">
+            <a href="http://blog.csdn.net/jiaweimin123" target="_blank">CSDN</a>
+            <a href="https://github.com/jiaweiming" target="_blank">GitHub</a>
+        </div>
+    </div>
+    <div id="box">
+        <div>
+            <h2>作品1：仿聚划算PC主页</h2>
+            <p>作品描述：使用HTML、css、js知识点，实现点击事件、海报轮图、倒计时等</p>
+            <a href="http://zhengjinwei.top:3002/juhuasuan/juhuasuan.htm" target="_blank">点击查看</a>
+        </div>
+        <div>
+            <h2>作品2：仿12306APP主页</h2>
+            <p>作品描述：使用HTML+css实现响应式布局，匹配多种手机尺寸</p>
+            <a href="http://zhengjinwei.top:3002/12306/index.html" target="_blank">点击查看</a>
+        </div>
+        <div>
+            <h2>作品3：web音乐播放器</h2>
+            <p>作品描述:使用jquery+jplayer插件制作简洁音乐播放器，可播放网络歌曲，适应多种手机端</p>
+            <a href="http://zhengjinwei.top:3002/musicplayer/index.html" target="_blank">点击查看</a>
+        </div>
+        <div>
+            <h2>作品4：商城网站主页</h2>
+            <p>作品描述：基于Bootstrap框架搭建，加上HTML和CSS，实现顶部自适应导航、海报轮播、栅格布局</p>
+            <a href="http://zhengjinwei.top:3002/shop/index.html" target="_blank">点击查看</a>
+        </div>
+        <div>
+            <h2>作品5：js实现坦克大战</h2>
+            <p>作品描述：使用JavaScript面向对象编程思想，H5新元素canvas绘制，实现简单版的坦克游戏大战</p>
+            <a href="http://zhengjinwei.top:3002/tank/tank.html" target="_blank">点击查看</a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var pic = 1;
+        setInterval(function () {
+            if (pic === 1) {
+                $("#header").find("img").attr("src", "img/list-0000.jpg")
+            } else {
+                $("#header").find("img").attr("src", "img/list-3.jpg")
+            }
+            pic = -pic; //交换两个值，从而替换图片
+        }, 4000)
+    })
+</script>
+</body>
+</html>

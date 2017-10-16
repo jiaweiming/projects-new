@@ -1,0 +1,671 @@
+@charset "utf-8";
+html{
+    font-size: 20px
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F2F2F2;
+}
+#content-all{
+    width: 1190px;
+    margin: 0 auto;
+    height: auto;
+}
+#header{
+    width: 100%;
+    height:30px;
+    background-color: #F5F5F5;
+}
+/*header第一排的文字共有样式*/
+.words{
+    color:#666;
+    text-decoration: none;
+    padding: 0.35rem;
+    font-size: 0.6rem;
+    line-height:30px;
+}
+.words:hover{
+    color:#E61414;
+}
+#header p {
+    float: left;
+}
+#header p span img{
+    position: absolute;
+    left:7%;
+    top:20px;
+    display: none;
+}
+#header ul{
+    float: right;
+    list-style: none;
+}
+#header ul li{
+    display: inline;
+}
+/*下箭头*/
+#header ul li:nth-child(3) img{
+    position: absolute;
+    margin-top: 0.35rem;
+    margin-left: -0.35rem;
+ }
+#header ul li:nth-child(3) a:hover~img{
+    transform: rotate(180deg);
+}
+/*第二部分 第二个大div*/
+#top{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+}
+/*聚划算logo*/
+#top img{
+    float: left;
+}
+
+#top ul li{
+    list-style: none;
+    display: inline;
+}
+#top ul li a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    line-height: 4rem;
+    padding: 0 0.55rem;
+    color:#4A4A4A;
+}
+#top ul li:hover{
+    background-color: #ededed;
+}
+#top ul li:nth-child(1){
+    background-color: #E61414;
+}
+#top ul li:nth-child(1) a{
+    color:white;
+}
+/*第三部分，背景大海报轮播图图片*/
+#content{
+    width: 100%;
+    height:430px;
+    background-color: #FF925D;
+}
+/*聚字下面的竖向产品列表*/
+#product{
+    width: 148px;
+    height:430px;
+    /*margin-left: 6.5%;*/
+    background-color: #F7F3F2;
+    float: left;
+}
+/*表格内容*/
+table tr td{
+  padding: 0 0.74rem;
+}
+table tr td a{
+	line-height:34px;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color:#333333;
+}
+table tr td:hover{
+    background-color: #E61414;
+}
+table tr td:hover>a{
+    color:#fff;
+}
+
+/*7天退换，质量保证模块*/
+#quality{
+    width: 100%;
+    height: 90px;
+    border-top: 2px dashed #ddd;
+    border-bottom: 2px dashed #ddd;
+}
+#quality a{
+    text-decoration: none;
+    color:#333;
+    font-size: 0.6rem;
+    line-height: 30px;
+    padding: 0.7rem;
+}
+#product>div:last-child{
+    width: 100%;
+    height:50px;
+    background-color: #E31A22;
+}
+.timer2{
+    color:#FEED6A;
+    text-align: center;
+    font-size: 15px;
+    margin: 2px auto;
+}
+/*倒计时小模块*/
+.timer{
+    width: 100%;
+    height: 34px;
+    color:#f1f1f1;
+    text-align: center;
+    margin: 0 auto;
+}
+/*包裹轮播图的div*/
+#container{
+    width: 788px;
+    height:430px;
+    margin: 0 4.5px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+/*轮播图*/
+#list{
+    width: 4000px;
+    height:430px;
+    position: absolute;
+    background-color: red;
+}
+#list img{
+    float: left;
+}
+#product img{
+    float: left;
+}
+/*右边的优惠券位置*/
+#coupon{
+    width: 245px;
+    height:430px;
+    float: right;
+    background-image: url("../images/half-price.jpg");
+}
+/*大广告通栏图片*/
+#picture{
+    width: 1190px;
+    height: 110px;
+    margin-top: 20px;
+}
+/*第五部分*/
+/*品牌团文字说明部分*/
+#brand{
+    width: 100%;
+    height: 30px;
+    /*border: 1px solid red;*/
+    margin-top: 0.5rem;
+    position: relative;
+}
+#brand>h3{
+    position: absolute;
+    display: inline-block;
+    width: 7%;
+    height: 30px;
+    /*border: 1px solid blue;*/
+    text-align: center;
+    line-height: 30px;
+    color:#334051;
+}
+#brand>h6{
+    position: absolute;
+    display: inline-block;
+    width: 15%;
+    margin-top: 5px;
+    margin-left: 80px;
+    height: 25px;
+    background-color: #4C4C4C;
+    line-height: 25px;
+    color:#ffffff;
+    border-radius: 5px;
+}
+#brand>h3,h6{
+    cursor: default;
+}
+/*中间部分的li列表横排*/
+#brand>div{
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    /*border: 1px solid yellow;*/
+    margin-left:42%;
+    text-align: center;
+    line-height: 30px;
+}
+#brand>div>ul>li{
+    display: inline-block;
+}
+#brand>div>ul>li>a{
+    padding: 2px;
+    text-decoration: none;
+    color:#666;
+    font-size: 0.7rem;
+}
+#brand>div>ul>li>a:hover{
+    color:#E61414;
+}
+/*右边的红底白字span*/
+#brand>span{
+    position: absolute;
+    float: right;
+    width: 8%;
+    height: 30px;
+    background-color: red;
+    text-align: center;
+    line-height: 30px;
+}
+/*右边的红底白字span*/
+#brand>span>a{
+    text-decoration: none;
+    color: #EAEAEA;
+    font-size: 0.85rem;
+}
+/*第六部分，6个div品牌模块*/
+#sixBlock{
+    width: 100%;
+    height: 345px;
+    /*border: 1px solid black;*/
+    /*margin-left: 6.5%;*/
+    margin-top: 1%;
+    display: flex;
+    -moz-flex-flow: wrap;
+    flex-flow: wrap;
+    -ms-flex-flow:wrap;
+    -o-flex-flow:wrap;
+    -webkit-flex-flow:wrap;
+    justify-content: space-between;
+}
+
+.sixBlock-0{
+    width: 33%;
+    height: 170px;
+    box-sizing: border-box;
+    border: solid 2px #fff;
+}
+/*6个div的边框设置*/
+.sixBlock-0:hover{
+    border: solid 2px #26A96D;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.pic-btm{
+    width: 100%;
+    height: 20px;
+    box-sizing: border-box;
+}
+.pic-item{
+    float: right;
+    margin-right: 5px;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+}
+.pic-item>em{
+    color:#54A96D;
+}
+/*}所有的品牌集合墙*/
+#allBrands{
+    width: 100%;
+    height: 80px;
+    /*border: solid 2px red;*/
+    /*margin-left: 6.5%;*/
+    margin-top:1%;
+    display: flex;
+    justify-content: space-between;
+    -moz-flex-flow: wrap;
+    flex-flow: wrap;
+    -ms-flex-flow:wrap;
+    -o-flex-flow:wrap;
+    -webkit-flex-flow:wrap;
+}
+/*品牌墙下的所有div*/
+#allBrands>div {
+    display: inline-block;
+    width: 7%;
+    height: 70px;
+    border: 1px solid #EEEEEE;
+}
+#allBrands>div>a{
+    display: block;
+    width:80%;
+    height: 50px;
+    margin: 10px auto;
+}
+/*品牌墙下div里的图片*/
+#allBrands>div>img{
+    text-align: center;
+    line-height: 70px;
+    z-index: 2;
+}
+/*第7个模块 今日团购横条*/
+#todayBuy{
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-bottom: solid 1px #dcdcdc;
+    margin-bottom: 20px;
+}
+/*标题*/
+#todayBuy>span{
+    line-height: 35px;
+    float: left;
+    width: 70px;
+    height: 35px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #ffffff;
+    border-right: 1px solid #DCDCDC;
+}
+#todayBuy>ul{
+    display: inline-block;
+   float: right;
+    margin-right: 10px;
+}
+#todayBuy>ul>li{
+    display: inline-block;
+    padding-left:0.5rem;
+}
+/*列表里的文字*/
+#todayBuy>ul>li>a{
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color:#666;
+}
+#todayBuy>ul>li>a:hover{
+    color:white;
+    background-color: #ff1f19;
+}
+/*第八部分，抢购活动版块*/
+#activity{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-flow: wrap;
+    -webkit-flex-flow:wrap;
+    justify-content: space-between;
+}
+/*活动版块下的所有div*/
+.act{
+    width: 24%;
+    height: 385px;
+    border: 2px solid white;
+    /*background-color: #fdffab;*/
+}
+.act>p{
+    /*margin-left: 5%;*/
+    font-size: 0.7rem;
+}
+.act>span{
+    font-size: 0.6rem;
+}
+.act:hover{
+    border: 2px solid #26A96D;
+    cursor: pointer;
+}
+/*小礼物形状的图标*/
+.fa-gift{
+    margin-left: 5%;
+    color:red;
+}
+.act-time{
+    width: 100%;
+    height: 50px;
+    /*border: 1px solid black;*/
+    background-color: #26A96D;
+    display: flex;
+    -moz-flex-flow: wrap;
+    flex-flow: wrap;
+    -ms-flex-flow:wrap;
+    -o-flex-flow:wrap;
+    -webkit-flex-flow:wrap;
+    justify-content: space-between;
+}
+/*第一个小模块 价格*/
+.first{
+    width: 35%;
+    height: 50px;
+    /*background-color: blue;*/
+}
+.first>span:nth-child(1){
+    font-size: 1rem;
+    color: #fff;
+}
+.first>span:nth-child(2){
+    font-size: 1.6rem;
+    color: #fff;
+}
+.first>span:nth-child(3){
+    font-size: 1rem;
+    color: #fff;
+}
+/*第二个小模块 多少人关注 想买*/
+.second{
+    width: 30%;
+    height: 50px;
+    /*background-color: #d600ff;*/
+}
+.second>p:first-child{
+    color: #fff;
+}
+.second>p:last-child{
+    color: #fff;
+    font-size: 0.7rem;
+    background-color: #229862;
+}
+/*第三个小模块 即将开抢*/
+.third{
+    text-align: center;
+    line-height: 25px;
+    width: 20%;
+    height: 50px;
+    background-color: #ffde7b;
+    font-size: 0.8rem;
+    color: #E61414;
+}
+/*页尾处下一页按钮*/
+#nextPage{
+    width: 40%;
+    height: 30px;
+    margin-left: 30%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    /*background-color: #8b7b7b;*/
+    display: flex;
+    -moz-flex-flow: wrap;
+    flex-flow: wrap;
+    -ms-flex-flow:wrap;
+    -o-flex-flow:wrap;
+    -webkit-flex-flow:wrap;
+    justify-content: space-between;
+}
+/*上一页下一页的按钮处*/
+.btn1{
+    text-align: center;
+    line-height: 30px;
+    width: 18%;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #f70003;
+    border: solid 1px white;
+}
+.btn1:hover{
+    border: solid 1px red;
+    cursor: pointer;
+}
+.btn2{
+    text-align: center;
+    line-height: 30px;
+    background-color: #eae5e9;
+    width: 10%;
+    height: 30px;
+    border: solid 1px white;
+}
+.btn2:hover{
+    border: solid 1px red;
+    cursor: pointer;
+}
+/*下面底部通栏分类处，横条*/
+#bottom{
+    width: 1190px;
+    height: 113px;
+    border-bottom: solid #D8DBE5 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+/*通栏里的左边图片*/
+.bottom-pic{
+    float: left;
+    width: 153px;
+    height: 113px;
+    display: inline-block;
+}
+/*通栏里方格块*/
+.bottom-list{
+    float: left;
+    width: 1037px;
+    height: 100%;
+    display: inline-block;
+}
+/*包含方块的div*/
+.bottom-list div{
+    width:1037px;
+    height: 110px;
+    margin-top: 1px;
+    position: absolute;
+    background-color: #FF4B7F;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-flow:wrap;
+}
+/*方块里的文字*/
+.bottom-list div a{
+    width: 10%;
+    height: 50%;
+    background-color: #FF0036;
+    text-decoration: none;
+    text-align: center;
+    line-height: 54.5px;
+    color:white;
+    font-size: 0.8rem;
+}
+/*倒数第二个模块 聚划算相关服务区*/
+#ju-foot{
+    width: 100%;
+    height: 160px;
+    margin-bottom: 1rem;
+}
+/*6个竖列的文字模块共同属性*/
+.ju-foot-1{
+    margin-top:20px;
+    width: 150px;
+    height: 130px;
+    padding:0 1.5rem;
+}
+/*6个标题*/
+.ju-foot-1 dt{
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #E1E1E1;
+    color: #423538;
+}
+/*6个标题下的内容*/
+.ju-foot-1 dd{
+    font-size: 0.7rem;
+    padding: 3px 0;
+    color: #7C7C7C;
+}
+.ju-foot-1 dd:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*坐标聚划算三个字的logo*/
+#ju-logo{
+    position: absolute;
+    margin: 20px 30px;
+}
+/*包含6个竖列文字的div*/
+#ju-text{
+    display: flex;
+    margin-left: 16.5%;
+}
+/*最后一项，底部的版权信息等*/
+#footer{
+    width: 100%;
+    height: 120px;
+    border-top: 1px solid #999;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+/*包含图片的div*/
+#footer>div:first-child{
+    width: 16%;
+    height: 100px;
+    margin-top: 1rem;
+}
+/*图片左边的区域*/
+#list-pro{
+    width: 80%;
+    height: 100px;
+    margin-top: 20px;
+}
+/*各种网站和小软件行的div*/
+#list-pro>div:first-child{
+    width: 100%;
+    height: 55px;
+}
+/*各种网站和小软件行的div下面的文字*/
+#list-pro>div:first-child>a{
+    text-decoration: none;
+    color: #999;
+    font-size: 0.68rem;
+    margin:2px 3px;
+}
+/*许可证行div*/
+#list-pro>div:nth-child(2){
+    margin-top: 20px;
+    width: 100%;
+    height: 1.2rem;
+}
+/*联系电话行的div*/
+#list-pro>div:last-child{
+    width: 100%;
+    height: 20px;
+}
+/*最下面两行文字*/
+.txt{
+    color:#999;
+    font-size: 0.5rem;
+}
+#suggests{
+    width: 40px;
+    height: 60px;
+    background-color: #ffbf82;
+    position: fixed;
+    right: 5px;
+    bottom: 90px;
+    z-index: 99;
+}
+#suggests>a{
+    text-decoration: none;
+    font-size: 15px;
+}
+#suggests>i{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+}
+#suggests>img{
+    right: 100%;
+    bottom: -25px;
+    width: 201px;
+    position: absolute;
+    color:red;
+}
+#suggests>a{
+    color:#f1f1f1;
+}

@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+}
+#container{
+    margin: 10px auto;
+    width:300px;
+    height: 550px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #272822;
+}
+/*头部*/
+#top{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 2px #32303B;
+}
+#top p{
+    text-align: center;
+    line-height:50px ;
+    font-size: 25px;
+    color: #f1f1f1;
+    font-style: oblique;
+}
+/*上边的音量控制条*/
+#voice{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+}
+/*音量加*/
+.add{
+    float: right;
+    margin-right: 2%;
+    width: 17px;
+    height:17px;
+    background-image: url("../images/jplayer.blue.monday.jpg");
+    background-position: -20px -185px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+/*音量减*/
+.cut{
+    float: left;
+    margin-left: 2%;
+    width: 17px;
+    height:17px;
+    background-image: url("../images/jplayer.blue.monday.jpg");
+    background-position: -80px -168px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+/*音量控制区*/
+#vol-full{
+    width: 80%;
+    height: 5px;
+    background: #c9cbff;
+    margin-left: 10%;
+    margin-top: 10px;
+    border: 1px solid rgba(255, 88, 44, 0.97);
+}
+/*音量变色*/
+#cur-vol{
+    width:0;
+    height:5px;
+    background: #288DB2;
+}
+/*下面是歌曲专辑图片位置*/
+#album-1 {
+    position:absolute;
+    width: 70%;
+    height: 38.181818%;
+    margin-left: 15%;
+    margin-top: 15%;
+    background-color: #3132ff;
+    background-image: url("../images/fatrat.png");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-animation: play 20s linear infinite;  /* 图片动画 匀速 无限*/
+}
+@-webkit-keyframes play{
+    100% {
+        -webkit-transform: rotate(360deg);  /* 360度旋转*/
+    }
+}
+/*正中央的歌曲信息和歌词显示区*/
+#lyrics{
+    width: 80%;
+    height: 120px;
+    position: absolute;
+    margin-top: 90%;
+    margin-left: 10%;
+    text-align: center;
+    line-height: 16px;
+    /*background-color: #B4B4B4;*/
+}
+#lyrics h3{
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 22px;
+    color: #ff7200;
+}
+#lyrics p{
+    font-size: 13px;
+    margin-top: 12px;
+    color: #ced7ff
+}
+input[type="button"]{
+    outline: none;
+    border:none;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+}
+/*播放控制的三个按钮div*/
+#press{
+    margin-top: 45%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+/*播放按钮/暂停按钮*/
+#but{
+    width: 38px;
+    height:38px;
+    background-image: url("../images/jplayer.blue.monday.jpg");
+    background-position:-40px 10px ;
+    border-radius: 11px;
+}
+/*上一首按钮*/
+.last {
+    width: 28px;
+    height:28px;
+    background-image: url("../images/jplayer.blue.monday.jpg");
+    background-position: -29px -112px;
+    border-radius: 10px;
+}
+.last:active{
+    background-position: 0 -112px;
+}
+/*下一首按钮*/
+.next{
+    width: 28px;
+    height:28px;
+    background-image: url("../images/jplayer.blue.monday.jpg");
+    background-position: -29px -141px;
+    border-radius: 10px;
+}
+/*停止按钮*/
+#pause{
+    width: 28px;
+    height:28px;
+    background-image: url("../images/jplayer.blue.monday.jpg");
+    background-position: -29px -83px;
+    border-radius: 10px;
+}
+.next:active{
+    background-position: 0 -141px;
+}
+/*整个播放控制区，最下面的部分*/
+.ctrl{
+    width: 100%;
+    height:90px;
+    margin-top: 100%;
+    position:absolute;
+}
+/*控制区内的歌曲播放进度条*/
+#down-2{
+    float: left;
+    width: 100%;
+    height: 35px;
+    background-color: #288DB2;
+}
+#begin{
+    float: left;
+    margin-left: 8px;
+}
+#end{
+    float: right;
+}
+/*歌曲起始时间显示*/
+.time{
+    width: 50px;
+    height: 20px;
+    margin-bottom:5px;
+    color: #fbf8ff;
+    margin-top: 30%;
+    /*border: 1px solid red ;*/
+}
+/*播放进度条*/
+#progress{
+    width: 60%;
+    height:5px;
+    margin-left: 20%;
+    margin-top: 32.2%;
+    position: absolute;
+    background-color: #C9CBFF;
+    border-radius: 5px;
+}
+#progress-c{
+    width:0;
+    height:5px;
+    background: #288DB2;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+

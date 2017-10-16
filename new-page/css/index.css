@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+html {
+    font-size: 20px;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+/*轮播图区域 第一块*/
+#header {
+    width: 100%;
+    height: 60%;
+}
+
+/*第二大区块*/
+#mine {
+    width: 100%;
+    height: 15%;
+    background-color: #f1f1f1;
+}
+
+/*个人主页几个字*/
+.mid {
+    width: 100%;
+    height: 50%;
+}
+
+.mid p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+/*两个按钮的div*/
+.cont {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;;
+    justify-content: space-around;
+}
+
+/*中间部分两个链接按钮*/
+.cont a {
+    display: block;
+    width: 80px;
+    height: 60%;
+    font-size: 1rem;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    background-color: #342e23;
+    border-radius: 6px;
+}
+
+.cont a:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/*下方第三大区块*/
+#box {
+    width: 100%;
+    height: 25%;
+    background-image: url("../img/ppt3312.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*下面五个放置小作品的区域*/
+#box > div {
+    color: #f1f1f1;
+    position: relative;
+    width: 18%;
+    height: 100%;
+}
+
+/*设置第五个div右边右对齐*/
+h2 {
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+#box > div > p {
+    color: #b0b4a9;
+    font-size: 0.75rem;
+}
+
+/*下面的5个对应按钮*/
+#box > div > a {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 35%;
+    height: 14%;
+    padding: 2px;
+    text-align: center;
+    font-family: "华文行楷", Helvetica, Arial, sans-serif;
+    background-color: #353424;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #f1f1f1;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+#box > div > a:hover {
+    color: #2fff40;
+    background-color: #353424;
+}
+
+#box > div > a:active {
+    transform: scale(1.1, 1.1);
+}
+
+/*下面是媒体查询，修改字体大小*/
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 16px
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    html {
+        font-size: 19px
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    html {
+        font-size: 20px
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    html {
+        font-size: 24px
+    }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+    html {
+        font-size: 36px
+    }
+}

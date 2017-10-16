@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    font-size: 16px;
+    height: 100%;
+}
+#content{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+#main{
+    padding-bottom: 40px;
+}
+.container {
+    width: 100%;
+    height: 140px;
+    position: fixed;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #555;
+    z-index: 999;
+}
+
+.tickets {
+    width: 100%;
+    height: 50px;
+    background-color: #298ACF;
+    text-align: center;
+}
+
+.tickets h2 {
+    color: #f1f1f1;
+    line-height: 50px;
+}
+
+.top {
+    width: 100%;
+    height: 90px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pic {
+    padding: 0;
+    width: 20%;
+    height: 50px;
+    margin-top: 10px;
+    /*background-color: #dad55e;*/
+    text-align: center;
+}
+
+/*第一个小图标*/
+.clock {
+    position: absolute;
+    /*background-color: #1EA5FF;*/
+}
+
+/*第二个小图标*/
+.heart {
+    position: absolute;
+    margin-top: 8px;
+    left: calc(50% - 2px);
+}
+
+/* 第三个小icon*/
+.can {
+    position: absolute;
+    margin-top: -12px;
+    left: 30%;
+}
+.cup{
+    margin-top: 10px;
+}
+
+/*第四个icon*/
+.airplane {
+    position: absolute;
+    left: 55%;
+}
+
+/*包裹icon的div*/
+.desc-c {
+    position: relative;
+    margin: 2px auto;
+    display: block;
+    width: 2em;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.desc {
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+/*线路选择*/
+.header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #555;
+    position: absolute;
+    margin-top: 140px;
+    text-align: center;
+}
+.header div {
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+
+}
+.header div span {
+    font-size: 20px;
+    float: left;
+    width: 33%;
+    height: 50px;
+    font-weight: bold;
+}
+
+.icon-loop {
+    margin-top: 15px;
+}
+
+/*出发时间*/
+.timer {
+    position: absolute;
+    margin-top: 180px;
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid #555;
+}
+
+.timer p {
+    width: 100%;
+    height: 20px;
+    margin: 20px 0;
+}
+
+.timer p span {
+    font-size: 1rem;
+}
+
+.timer p span input {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+}
+
+.timer-t {
+    color: #aea5a0;
+    margin-left: 5%;
+}
+
+.timer p:first-child span {
+    width: 30%;
+    height: 40px;
+    float: left;
+}
+
+.timer p:nth-child(2) span {
+    width: 30%;
+    height: 30px;
+    float: left;
+}
+
+.timer p:last-child span {
+    width: 30%;
+    height: 30px;
+    float: left;
+}
+
+/*可选车次型号，高铁还是绿皮*/
+.train {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    margin-top: 310px;
+    border-bottom: 1px solid #555;
+    text-align: center;
+}
+
+.train span {
+    margin: 5px auto;
+    float: left;
+    width: 16.6%;
+    height: 30px;
+    line-height: 30px;
+}
+#f1 {
+    background-color: #5CAAD8;
+    border-radius: 10px;
+}
+
+/*添加乘客按钮*/
+.customer {
+    position: absolute;
+    margin-top: 350px;
+    width: 100%;
+    height: 40px;
+    /*border: 1px solid red;*/
+}
+
+.customer div {
+    display: inline-block;
+}
+
+.customer div:first-child {
+    width: 26px;
+    height: 26px;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 5%;
+}
+
+.customer div:first-child span {
+    font-size: 25px;
+    line-height: 25px;
+    color: red;
+
+}
+.customer div:last-child {
+    width: 100px;
+    height: 40px;
+}
+
+.customer div:last-child p {
+    color: #ffb932;
+    font-size: 1.3rem;
+}
+
+/*查询按钮*/
+.check {
+    position: absolute;
+    margin-top: 390px;
+    width: 100%;
+    height: 34px;
+    /*border: 1px solid red;*/
+}
+.check input {
+    width: 98%;
+    height: 34px;
+    background-color: #007fff;
+    margin: 3px 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #f1f1f1;
+}
+
+/*分割线*/
+.nextLine {
+    position: absolute;
+    margin-top: 430px;
+    width: 100%;
+    height: 30px;
+}
+.order {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.order .line {
+    display: inline-block;
+    width: 25%;
+    border-top: 3px solid #82B3D5;
+}
+.order .txt {
+    color: #555;
+    vertical-align: middle;
+}
+
+/*页脚固定导航栏*/
+#footFixed{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+.footer {
+    width: 100%;
+    height: 40px;
+    background-color: #343434;
+    text-align: center;
+    z-index: 9999;
+}
+
+.footer span {
+    display: block;
+    width: 25%;
+    height: 40px;
+    float: left;
+    color: #f1f1f1;
+    font-size: 1rem;
+    line-height: 40px;
+}
+.footer span:first-child {
+    background-color: #555;
+}
+

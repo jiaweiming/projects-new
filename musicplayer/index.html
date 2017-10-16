@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>music player</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,
+    maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/music.css">
+</head>
+<body>
+<div id="container">
+    <div id="MyJplayer"></div>
+    <div id="top">
+        <p>Easy Music Player</p>
+    </div>
+    <div id="voice">
+        <input id="subVo" class="key cut" type="button" value="">
+        <div id="vol-full">
+            <div id="cur-vol">
+            </div>
+        </div>
+        <input id="addVo" class="key add" type="button" value="">
+    </div>
+    <div class="album" id="album-1"></div>
+    <div id="lyrics"><h3>泪雨红妆</h3><p>作词、作曲：格子兮</p><p>演唱：格子兮</p></div>
+    <div class="ctrl">
+        <div id="#down-2">
+            <div class="time start" id="begin"></div>
+            <div id="progress">
+                <div id="progress-c"></div>
+            </div>
+            <div class="time over" id="end"></div>
+        </div>
+        <div id="press">
+            <input id="last" class="key last" type="button" value="">
+            <input id="but" type="button" value="" onclick="play()">
+            <input id="pause" type="button" value="" onclick="stop()">
+            <input id="next" class="key next" type="button" value="">
+        </div>
+    </div>
+    <div id="slider"></div>
+</div>
+<script type="text/javascript" src="jplayer/jquery.min.js"></script>
+<script type="text/javascript" src="./jplayer/jquery.jplayer.min.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script type="text/javascript" src="jplayer/main.js"></script>
+</body>
+</html>
